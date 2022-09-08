@@ -1,3 +1,26 @@
+header {
+  font-family: "Quicksand", sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff
+}
+
+header.flex-container {
+  padding: inherit;
+  margin: auto;
+  list-style: none;
+  display: flex;
+}
+
+.center {
+  justify-content: center;
+}
+
+
+
+
+
+
 body {
 background: rgb(19,77,113);
 background: linear-gradient(180deg, rgba(19,77,113,1) 0%, rgba(120,167,198,1) 50%, rgba(247,228,191,1) 100%);

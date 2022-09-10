@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <header class="flex-container center">
-      <h1>✨ Self Care Center ✨</h1>
-    </header>
       <link rel="stylesheet" href="styles.css">
       <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-
+  <body class="background-container">
+    <!-- <div class="container-1"> -->
+    <h1 class="self-care-center"> ✨	Self Care Center ✨ </h1>
+    <!-- </div> -->
+    <section class="wrapper-container">
+      <!-- <div class="container-2"> -->
+      <!-- </div> -->
+      <h2 class="message-type"> Which type of message? </h2>
+      <div class="wrapper-genres">
+        <div class="wrapper-radio">
+          <div class="wrapper-affirmation">
+            <input type="radio" id="affirmation" name="message-genre" value="affirmation" style="margin-right: 10px">
+            <label for="affirmation">affirmation</label>
+          </div>
+          <div class="wrapper-mantra">
+            <input type="radio" id="mantra" name="message-genre" value="mantra" style="margin-right: 10px">
+            <label for="mantra">mantra</label>
+          </div>
+        </div>
+        <div class="receive-message">
+          <input class="message-input" type="button" value="Receive Message">
+        </div>
+      </div>
+      <article class="input-message-or-icon">
+        <p>Message goes here</p>
+      </article>
+      </div>
+    </section>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

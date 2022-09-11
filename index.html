@@ -1,11 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="styles.css">
+      <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
   </head>
-  <body>
-  
+  <body class="background-container">
+    <h1 class="self-care-center"> ✨	Self Care Center ✨ </h1>
+    <section class="wrapper-container">
+      <h2 class="message-type"> Which type of message? </h2>
+      <div class="wrapper-genres">
+        <div class="wrapper-radio">
+          <div class="wrapper-affirmation">
+            <input type="radio" id="affirmation" name="message-genre" value="affirmation" style="margin-right: 10px">
+            <label for="affirmation">affirmation</label>
+          </div>
+          <div class="wrapper-mantra">
+            <input type="radio" id="mantra" name="message-genre" value="mantra" style="margin-right: 10px"></button>
+            <label for="mantra">mantra</label>
+          </div>
+        </div>
+        <div class="receive-message">
+          <button class="message-input" type="button">Receive Message</button>
+        </div>
+      </div>
+      <article class="input-message-or-icon">
+        <p class="message-goes-here"></p>
+      <img class="meditate-image" src="assets/meditate.svg" alt="yogi">
+      </article>
+    </section>
     <script type="text/javascript" src="main.js"></script>
   </body>
 </html>

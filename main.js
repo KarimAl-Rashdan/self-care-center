@@ -49,7 +49,6 @@ var mantras = [
 var originalMantras = mantras
 
 function getRandomIndex(array, original) {
-  console.log(array)
   if(array.length === 0) {
     errorMessage.innerText = "Message list starting over."
     array.push(...original)

@@ -17,11 +17,11 @@
 
 .self-care-center {
   display: flex;
-  width: 40%;
-  margin: 70px;
-  align-items: center;
+  width: 75%;
+  margin: 80px;
+  /* align-items: center; */
   justify-content: center;
-  min-height: 125px;
+  /* min-height: 125px; */
   font-family: "Quicksand", sans-serif;
   font-weight: bold;
   align-items: stretch;
@@ -64,10 +64,24 @@
 }
 .wrapper-radio{
   display: flex;
+  min-height: 75px;
   width:100%;
   justify-content: space-around;
+  flex-direction: row;
+  align-items: center;
+  /* align-content: space-around; */
 
 }
+.button-container{
+  display: flex;
+  /* justify-content: space-around; */
+  /* align-self: flex-end; */
+  justify-content: space-around;
+  align-items: center;
+  min-height: 75px;
+  align-content: center;
+}
+
 .wrapper-affirmation {
   display: flex;
   font-size: 13px;
@@ -75,8 +89,11 @@
   font-style: italic;
   flex-direction: row;
   align-content: space-between;
-  align-items: flex-start;
-  transform: scale3d(2, 2, 2);
+  align-items: center;
+  transform: scale(2, 2);
+}
+input {
+  margin: 1rem;
 }
 .wrapper-mantra{
   display: flex;
@@ -85,10 +102,29 @@
   font-style: italic;
   flex-direction: row;
   align-content: space-between;
-  align-items: flex-start;
-  transform: scale3d(2, 2, 2);
+  align-items: center;
+  transform: scale(2, 2);
 }
-.message-input {
+.button {
+  display: flex;
+  align-content: space-around;
+  line-height: 1.5;
+  border-radius: 6px;
+  font-size: 25px;
+  font-family: 'Quicksand', sans-serif;
+  text-align: center;
+  background-color: #134d71;
+  color: #ffffff;
+  border: 0;
+  justify-content: center;
+  width: 40%;
+}
+.form-container {
+  width: 100%;
+  min-height: 150px;
+  align-content: space-around;
+}
+/* .receive-message {
   line-height: 1.5;
   padding: 0 35px;
   border-radius: 6px;
@@ -98,7 +134,7 @@
   background-color: #134d71;
   color: #ffffff;
   border: 0;
-}
+} */
 
 .input-message-or-icon {
   display: flex;

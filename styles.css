@@ -1,49 +1,36 @@
-.background-container { /*background container*/
+.hidden {
+  display: none;
+}
+
+.background-container {
   width:100%;
   height: 100vh;
-  background-position: center;
-  background: rgb(19,77,113);
   background: linear-gradient(180deg, rgba(19,77,113,1) 20%, rgba(120,167,198,1) 80%, rgba(247,228,191,1) 100%);
-  /* background-image: linear-gradient(#134d71, #78a7c6, #f7e4bf); */
   display: flex;
-  justify-content: flex-start;
   align-items: center;
-  align-content: center;
-  flex-flow: column wrap;
+  flex-direction: column;
+  justify-content: center;
 }
-/* .container-1 {
-    display: flex;
-} */
 
 .self-care-center {
   display: flex;
-  width: 40%;
-  margin: 70px;
-  align-items: center;
+  margin: 80px;
   justify-content: center;
-  min-height: 125px;
   font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  align-items: stretch;
   font-size: 45px;
   color: #ffffff;
 }
+
 .wrapper-container {
-  width:100%;
+  width: 100%;
   min-height: fit-content;
 }
-/* .container-2 {
-  display: flex;
-} */
+
 .message-type {
   display: flex;
   margin: auto;
-  align-items: center;
   justify-content: center;
-  min-height: 10px;
-  width: 90%;
   font-family: "Quicksand", sans-serif;
-  font-weight: bold;
   font-size: 35px;
   color: #ffffff;
   padding-bottom: 10px;
@@ -51,46 +38,51 @@
 
 .wrapper-genres {
   display: flex;
-  width: 40%;
+  width: 50%;
   margin: auto;
-  min-height: 150px;
   border-radius: 15px;
   background-color: #ffffff;
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
 }
-.wrapper-radio{
-  display: flex;
-  width:100%;
-  justify-content: space-around;
 
+.wrapper-radio {
+  display: flex;
+  min-height: 75px;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.button-container {
+  display: flex;
+  justify-content: space-around;
+}
+
 .wrapper-affirmation {
   display: flex;
+  height: 17px;
   font-size: 13px;
   font-family: 'Quicksand', sans-serif;
   font-style: italic;
-  flex-direction: row;
-  align-content: space-between;
-  align-items: flex-start;
-  transform: scale3d(2, 2, 2);
+  align-items: center;
+  transform: scale(2, 2);
 }
-.wrapper-mantra{
+input {
+  margin: 1rem;
+}
+
+.wrapper-mantra {
   display: flex;
+  height:17px;
   font-size: 13px;
   font-family: 'Quicksand', sans-serif;
   font-style: italic;
-  flex-direction: row;
-  align-content: space-between;
-  align-items: flex-start;
-  transform: scale3d(2, 2, 2);
+  align-items: center;
+  transform: scale(2, 2);
 }
-.message-input {
+
+.button {
+  display: flex;
+  align-content: space-around;
   line-height: 1.5;
-  padding: 0 35px;
   border-radius: 6px;
   font-size: 25px;
   font-family: 'Quicksand', sans-serif;
@@ -98,95 +90,38 @@
   background-color: #134d71;
   color: #ffffff;
   border: 0;
+  justify-content: center;
+  width: 50%;
+}
+
+.form-container {
+  width: 100%;
+  min-height: 150px;
+  align-content: space-around;
 }
 
 .input-message-or-icon {
   display: flex;
-  margin: 140px auto;
-  min-height: 220px;
-  width: 60%;
+  margin: 80px auto;
+  min-height: 190px;
+  width: 70%;
   background-color: #ffffff;
   align-items: center;
   justify-content: center;
   border-radius: 15px;
-  /* font-size: 35px;
-  font-family: 'Quicksand', sans-serif;
-  align-content: stretch; */
+  flex-direction: column;
 }
+
 .message-goes-here {
   display: flex;
   font-size: 35px;
   font-family: 'Quicksand', sans-serif;
-  align-content: stretch;
 }
+
 .meditate-image {
   width: 10%;
 }
 
-
-
-
-
-
-
-
-
-/* .container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: baseline;
-  gap: 10px 30px;
+.hidden {
+  visibility: none;
 }
-
-header.flex-container > h1 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 30px;
-  align-items: center;
-  font-weight: bold;
-  color: #ffffff
-}
-
-header.flex-container {
-  padding: inherit;
-  margin: 2%;
-  list-style: none;
-  display: flex;
-}
-
-
-
-.flex-container > h2 {
-  font-family: "Quicksand", sans-serif;
-  font-size: 25px;
-  align-items: center;
-  font-weight: bold;
-  color: #ffffff
-}
-
-.flex-container {
-  padding: inherit;
-  margin: 5%;
-  list-style: none;
-  display: flex;
-} */
-
-
-/*
-body {
-background: rgb(19,77,113);
-background: linear-gradient(180deg, rgba(19,77,113,1) 0%, rgba(120,167,198,1) 50%, rgba(247,228,191,1) 100%);
-background-size: 100vh 900px;
-} */
-
-
-
-
-/* font-family: 'Quicksand', sans-serif;
-COLORS
-light-yellow - #f7e4bf;
-light-blue - #78a7c6;
-dark-blue - #134d71;
-white - #ffffff;
-black - #000000;
-*/

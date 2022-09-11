@@ -14,14 +14,9 @@
 
 .self-care-center {
   display: flex;
-  width: 75%;
   margin: 80px;
-  /* align-items: center; */
   justify-content: center;
-  /* min-height: 125px; */
   font-family: "Quicksand", sans-serif;
-  font-weight: bold;
-  align-items: stretch;
   font-size: 45px;
   color: #ffffff;
 }

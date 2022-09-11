@@ -1,19 +1,23 @@
-var formInput = document.querySelector(".wrapper-radio");
-// var affirmationInput = document.getElementById("affirmation");
-var mantraInput = document.querySelector(".wrapper-mantra");
-var receiveMessageInput = document.getElementById("receive-message");
-var randomMessage = document.querySelector(".message-goes-here");
-var yogiSymbol = document.querySelector(".meditate-image");
-var affirmation = document.getElementById("affirmation");
-
-var fakeAffirmationData = ["Believe in yourself!", "You're doing great!", "Know your value!"]
+var affirmationButton = document.querySelector("#affirmation");
+var mantraButton = document.querySelector("#mantra");
+var receiveMessageButton = document.querySelector(".button");
+var outputDisplay = document.querySelector(".input-message-or-icon");
+var messageDisplay = document.querySelector(".message-goes-here");
+var iconDisplay = document.querySelector(".meditate-image");
 
 // affirmationInput.addEventListener('click', loadRandomMessage())
-receiveMessageInput.addEventListener('click', loadRandomMessage)
+//Add Event Listeners here
+receiveMessageButton.addEventListener('click', viewOutput)
 
 // function chooseMessage() {
 //     receiveMessageInput
 // }
+// functions here
+
+
+
+
+
 
  function loadRandomMessage() {
    console.log("input");

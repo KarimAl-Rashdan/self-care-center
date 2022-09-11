@@ -13,7 +13,10 @@ receiveMessageButton.addEventListener('click', viewOutput)
 //     receiveMessageInput
 // }
 // functions here
-
+function viewOutput() {
+  iconDisplay.style.display = "none";
+  messageDisplay.style.display = 
+}
 
 
 

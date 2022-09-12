@@ -5,17 +5,10 @@ var outputDisplay = document.querySelector(".input-message-or-icon");
 var messageDisplay = document.querySelector(".message-goes-here");
 var iconDisplay = document.querySelector(".meditate-image");
 var errorMessage = document.querySelector(".error-message");
-// affirmationInput.addEventListener('click', loadRandomMessage())
-//Add Event Listeners here
+
 receiveMessageButton.addEventListener('click', affirmationDisplay)
 
-// function chooseMessage() {
-//     receiveMessageInput
-// }
-// functions here
-
-
-var affirmations = [
+var originalAffirmations = [
   "I forgive myself and set myself free.",
   "I believe I can be all that I want to be.",
   "I am in the process of becoming the best version of myself.",
@@ -28,8 +21,9 @@ var affirmations = [
   "I honor my body by trusting the signals that it sends me.",
   "I manifest perfect health by making smart choices."
 ];
-var originalAffirmations = affirmations
-var mantras = [
+var affirmations = Array.from(originalAffirmations)
+
+var originalMantras = [
   "Breathing in, I send myself love. Breathing out, I send love to someone else who needs it.",
   "Don’t let yesterday take up too much of today.",
   "Every day is a second chance.",
@@ -44,13 +38,15 @@ var mantras = [
   "Yesterday is not today.",
   "The only constant is change.",
   "Onward and upward.",
-  "I am the sky, the rest is weather."
+  "I am the sky, the rest is weather.",
 ];
-var originalMantras = mantras
+var mantras = Array.from(originalMantras)
 
 function getRandomIndex(array, original) {
+  console.log(array)
+  console.log(original)
   if(array.length === 0) {
-    errorMessage.innerText = "Message list starting over."
+    errorMessage.innerText = "You will now see repeated messages."
     array.push(...original)
   } else {
     errorMessage.innerText = ""
@@ -60,14 +56,6 @@ function getRandomIndex(array, original) {
   array.splice(index, 1)
   return statement
 };
-
-// function showEveryStatement(array) {
-//   var affirmationMessage
-//   for (var i = 0; i < affirmations.length-1; i++) {
-//     console.log(affirmations[i])
-//   }
-
-
 
 function affirmationDisplay(event) {
   event.preventDefault()
@@ -80,20 +68,3 @@ function affirmationDisplay(event) {
   }
   iconDisplay.classList.add("hidden")
 };
-
-
-
-
-
-
-
-
-// module.exports()
- // function loadRandomMessage() {
- //   console.log("input");
- // console.log(formInput.value);
- //   if(formInput.value === "affirmation") { //for loop
- //     randomMessage.innerHTML = fakeAffirmationData[0];
- //   }
- // }
-// make file for mantra data and affirmation data. assign variable to file
